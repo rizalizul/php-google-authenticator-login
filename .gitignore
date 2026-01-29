@@ -1,0 +1,4 @@
+/vendor
+db.php
+.env
+.DS_Store
