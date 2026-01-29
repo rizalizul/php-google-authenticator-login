@@ -49,9 +49,8 @@ composer install
 1. Buat database baru di MySQL/phpMyAdmin (misalnya: auth_db).
 2. Import file database.sql yang ada di dalam folder proyek ke database tersebut.
 3. ATAU, jika tidak ada file SQL, jalankan query berikut manual:
-
-<details> <summary>klik untuk melihat Query SQL</summary>
-```bash
+4. 
+```SQL
 CREATE TABLE users (
     id INT AUTO_INCREMENT PRIMARY KEY,
     username VARCHAR(50) NOT NULL UNIQUE,
@@ -67,7 +66,6 @@ CREATE TABLE users (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 ```
-</details>
 
 ### 4. Konfigurasi Koneksi (db.php)
 
